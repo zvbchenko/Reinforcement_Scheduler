@@ -18,8 +18,7 @@ class Auxillary_Reinforcement {
         let denominator = stdev*Math.sqrt(2*Math.PI);
         let power = -0.5* ( (this.lastoccurance - this.mean) / stdev )**2;
         return denominator * Math.exp(power);
-
-
+        
     }
 
     update_accumulated_prob(){
@@ -43,8 +42,4 @@ class Auxillary_Reinforcement {
             this.lastoccurance += 1;
         }
     }
-
-
-
-    
 }

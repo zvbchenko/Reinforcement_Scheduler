@@ -1,0 +1,12 @@
+{
+  "name": "Reinforcement_Scheduler",
+  "version": "0.0.1",
+  "description": "Leveraging variable reinforcement schedule for productivity",
+  "main": "index.js",
+  "repository": "https://github.com/zvbchenko/Reinforcement_Scheduler.git",
+  "author": "zvbchenko <zvbchenko@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^4.4.3"
+  }
+}
