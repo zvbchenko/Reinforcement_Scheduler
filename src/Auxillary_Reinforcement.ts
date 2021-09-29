@@ -1,11 +1,11 @@
 
-class Auxillary_Reinforcement {
+export class Auxillary_Reinforcement {
     private name: string;
     private mean: number;
     private lastoccurance: number;
     private accumulatedprobability: number;
 
-    constructor(name, mean){
+    constructor(name : string, mean : number){
         this.name = name;
         this.mean = mean; // how many times do you want to use this A.R. per 5 sessions.
         this.lastoccurance = 0; // number of sessions ago

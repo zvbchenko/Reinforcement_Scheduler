@@ -1,6 +1,6 @@
 
 
-class Recurrent_Task {
+export class Recurrent_Task {
     private name: string;
     // add list with auxillary reinforcements
 
