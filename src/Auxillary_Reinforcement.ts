@@ -1,14 +1,14 @@
 
 export class Auxillary_Reinforcement {
     private name: string;
-    private mean: number;
-    private lastoccurance: number;
+    private readonly mean: number;
     private accumulatedprobability: number;
+    private lastoccurence: number;
 
     constructor(name : string, mean : number){
         this.name = name;
         this.mean = mean; // how many times do you want to use this A.R. per 5 sessions.
-        this.lastoccurance = 0; // number of sessions ago
+        this.lastoccurence = 0; // number of sessions ago
         this.accumulatedprobability = 0.0; //
     }
 
@@ -16,7 +16,7 @@ export class Auxillary_Reinforcement {
     probability_of_reinforcement(){
         let stdev = 1;
         let denominator = stdev*Math.sqrt(2*Math.PI);
-        let power = -0.5* ( (this.lastoccurance - this.mean) / stdev )**2;
+        let power = -0.5* ( (this.lastoccurence - this.mean) / stdev )**2;
         return denominator * Math.exp(power);
         
     }
@@ -35,11 +35,11 @@ export class Auxillary_Reinforcement {
     update(){
         this.update_accumulated_prob();
         if (this.to_reward_or_not()){
-            this.lastoccurance = 0;
+            this.lastoccurence = 0;
             this.accumulatedprobability = 0.0;
 
         } else{
-            this.lastoccurance += 1;
+            this.lastoccurence += 1;
         }
     }
 }
