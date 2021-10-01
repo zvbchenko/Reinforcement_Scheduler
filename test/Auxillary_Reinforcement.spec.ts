@@ -10,8 +10,8 @@ describe("Auxillary_Reinforcement", function(){
 
             expect(rnf).to.have.property('name', 'music');
             expect(rnf).to.have.property('mean', 3);
-            expect(rnf).hasOwnProperty('lastoccurence');
-            expect(rnf).hasOwnProperty('accumulatedprobability');
+            expect(rnf).to.have.property('accumulatedprobability', 0);
+            expect(rnf).to.have.property('lastoccurance', 0)
 
         });
 
