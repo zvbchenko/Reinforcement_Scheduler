@@ -1,6 +1,6 @@
 
 export class Auxillary_Reinforcement {
-    private name: string;
+    public name: string;
     private readonly mean: number;
     private accumulatedprobability: number;
     private lastoccurence: number;
