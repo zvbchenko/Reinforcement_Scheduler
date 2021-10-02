@@ -15,7 +15,7 @@ export class Auxillary_Reinforcement {
 
     }
 
-    // Using Box-Müller Transform to sample normal distribution
+    // Using to sample normal distribution
     // IDEA: Sample 1000, using BM - transform turn into a normal distribution(0, 1).
     // Transform into normal distribution(\mu, \stdev^2) by Y= mu + stdev*X
 
@@ -39,7 +39,7 @@ export class Auxillary_Reinforcement {
     }
     to_reward_or_not() {
         let random_val = Math.random();
-        return (random_val >= this.accumulatedprobability);
+        return (random_val <= this.accumulatedprobability);
     }
 
     update_accumulated_prob(){
