@@ -28,9 +28,25 @@ export class Recurrent_Task {
             }
         }
         return allowedreinfs;
-
-
     }
+
+    update_accumulated_prob(name:string, times:number){
+        // updates cdf of a specific reinforcement for testing
+        function checkName(item:Auxillary_Reinforcement){
+            return item.name == name;
+        }
+        let rnf = this.auxreinfs.find(checkName);
+        let i = 0;
+        if (rnf != undefined){
+            while(i < times){
+                rnf.update_accumulated_prob();
+                i++;
+            }
+        } else{
+            console.log("Reinforcement not in a list");
+        }
+    }
+
 
 
 }

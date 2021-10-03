@@ -42,12 +42,7 @@ describe("Recurrent Task", function() {
         it("Should list reinforcement allowed to use this time", function () {
             const rtk = new Recurrent_Task("Work out");
             rtk.add_reinforcement("music", 3);
-            rtk.auxreinfs[0].update_accumulated_prob();// TODO: that's a mess -> make another method for this. go back to private
-            rtk.auxreinfs[0].update_accumulated_prob();
-            rtk.auxreinfs[0].update_accumulated_prob();
-            rtk.auxreinfs[0].update_accumulated_prob();
-            rtk.auxreinfs[0].update_accumulated_prob();
-            rtk.auxreinfs[0].update_accumulated_prob();
+            rtk.update_accumulated_prob("music", 7);
             rtk.add_reinforcement("youtube", 7);
             rtk.add_reinforcement("podcast", 7);
 
