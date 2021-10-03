@@ -15,11 +15,7 @@ export class Recurrent_Task {
     }
 
     delete_reinforcement(name: string){
-        try{
-            this.auxreinfs.filter((item) => item.name != name);
-        }catch{
-            console.log("no deletion allowed for some reason");
-        }
+       this.auxreinfs = this.auxreinfs.filter((item) => item.name != name);
     }
 
 
