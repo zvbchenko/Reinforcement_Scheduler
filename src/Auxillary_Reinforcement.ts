@@ -62,7 +62,8 @@ export class Auxillary_Reinforcement {
             // RESET the values
             this.lastoccurence = 0;
             this.accumulatedprobability = 0.0;
-
+            return true;
         }
+        return false;
     }
 }
