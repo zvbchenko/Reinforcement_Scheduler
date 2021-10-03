@@ -3,7 +3,7 @@ import {Auxillary_Reinforcement} from "./Auxillary_Reinforcement";
 
 export class Recurrent_Task {
     public name: string;
-    public auxreinfs: Auxillary_Reinforcement[];
+    private auxreinfs: Auxillary_Reinforcement[];
     // add list with auxillary reinforcements
     constructor(name: string) {
         this.name = name;
