@@ -43,9 +43,18 @@ export class Recurrent_Task {
                 i++;
             }
         } else{
+
             console.log("Reinforcement not in a list");
         }
     }
+
+    toString() {
+        const that = this;
+        return JSON.stringify(that);
+    }
+
+
+
 
 
 
