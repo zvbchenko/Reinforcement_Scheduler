@@ -1,0 +1,43 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    font-family: "Tahoma", -apple-system, system-ui, Ubuntu;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: #f6f6f6;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+#main-holder {
+    position: fixed;
+    padding: 0;
+    width: 90%;
+    height: 80%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 9px;
+    box-shadow: 0px 0px 5px 2px #c4c1c1;
+    top: 125px;
+    left: 50px;
+
+}
+
+h1{
+    position: fixed;
+    font-style: normal;
+    height: 0.5em;
+    width:100%;
+    text-align: left !important;
+    top: 25px;
+    left: 50px;
+
+}
+
