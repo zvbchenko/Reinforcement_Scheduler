@@ -11,8 +11,8 @@ export class User {
         this.email = email;
         this.recurrent_tasks = []
     }
-    add_recurrent_task(task: Recurrent_Task){
 
+    add_recurrent_task(task: Recurrent_Task){
         let findind = this.recurrent_tasks.findIndex(item => item.name == task.name);
         if (findind == undefined){
             this.recurrent_tasks.push(task);

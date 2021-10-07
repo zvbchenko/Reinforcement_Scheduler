@@ -53,18 +53,4 @@ describe("Recurrent Task", function() {
             expect(rtk.list_allowed_reinforcements()).to.eql(list_ref);
         });
     });
-    describe("Test json of objects", function () {
-        // TODO: Figure out a way to test
-        it("Should test json of recurrent task with reinforcements", function () {
-            const rtk = new Recurrent_Task("Work out");
-            rtk.add_reinforcement("music", 3);
-
-            console.log(rtk.toString());
-
-        });
-    });
-
-
-
-
 });
